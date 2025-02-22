@@ -1,0 +1,21 @@
+name: 'Gaithub - AI-powered PR generatore and issue fixer'
+description: 'AI-powered PR generator and issue fixer. Custom LLMs, fully autonomous, with interactive updates.'
+author: 'GenLabs'
+
+branding:
+  icon: 'git-merge'
+  color: 'blue'
+
+inputs:
+  github-token:
+    description: 'GitHub token for API access'
+    required: true
+  model-api-key:
+    description: 'OpenRouter API key'
+    required: true
+  model-name:
+    description: 'Model to use (OpenRouter-syntax)'
+    required: true
+runs:
+  using: 'python3'
+  main: 'dist/index.py'
